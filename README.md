@@ -16,7 +16,24 @@ npm run prod : it's used to run the application on prod environment
 
 ## How to import postman collection for API testing
 There is postman collection [TruffleHealth.postman_collection.json] in project [Truffle-Health-Assessment] so
-Go to Home/File of postman and click import this file [TruffleHealth.postman_collection.json].
+Go to Home/File of postman and click import this file [TruffleHealth.postman_collection.json] in postman.
+
+## End point of API
+1. GET /items: returns a list of medical bills
+- http://localhost:3000/items
+- curl request:- curl --location --request GET 'http://localhost:3000/items'
+2. POST /items: creates a new medical bill
+- http://localhost:3000/items
+- curl request:- curl --location --request POST 'http://localhost:3000/items' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "patient_name":"Mohan",
+    "hospital_name":"Mount Sinai Hospital",
+    "address":"One Gustave L Levy Place, New York, NY 10029-0310",
+    "date_of_service": "2014-01-01T23:28:56.782Z",
+    "bill_amount":120
+}'
+
 
 ## GitHub Link
 - https://github.com/rtnkumar/Truffle-Health-Assessment
