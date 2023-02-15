@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "e700f3e6-ed7a-4b6c-b86f-c9d75faf96cb",
+		"name": "TruffleHealth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetItems",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AddItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"\",\n    \"bill_amount\":1200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCase10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patient_name\":\"Roushan\",\n    \"hospital_name\":\"Mount Sinai Hospital\",\n    \"address\":\"One Gustave L Levy Place, New York, NY 10029-0310\",\n    \"date_of_service\": \"2014-01-01T23:28:56.782Z\",\n    \"bill_amount\":null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
